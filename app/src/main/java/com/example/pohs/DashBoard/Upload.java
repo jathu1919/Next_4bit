@@ -1,0 +1,38 @@
+package com.example.pohs.DashBoard;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
+
+import android.view.Menu;
+import com.example.pohs.R;
+
+public class Upload extends AppCompatActivity {
+
+    private Toolbar mtoolbar;
+
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_upload);
+
+        mtoolbar = (Toolbar) findViewById(R.id.Upload_dashboard_toolbar);
+        //setSupportActionBar(mtoolbar);
+        getSupportActionBar().setTitle("UPLOAD");
+
+ }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        return true;
+    }
+
+
+}
